@@ -5,6 +5,7 @@ import person from '../assets/person_outline.svg'
 class NavBar extends Component {
     handleLogout (){
         localStorage.removeItem('token')
+        window.location.replace(`/home/`)
     }
     render() {
         return (
